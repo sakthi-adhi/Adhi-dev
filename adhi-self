@@ -1,0 +1,29 @@
+class CompanyProfile:
+    def __init__(self, name, industry, location, website, contact):
+        self.name = name
+        self.industry = industry
+        self.location = location
+        self.website = website
+        self.contact = contact
+
+    def display_profile(self):
+        print("\nCompany Profile")
+        print("=" * 30)
+        print(f"Name       : {self.name}")
+        print(f"Industry   : {self.industry}")
+        print(f"Location   : {self.location}")
+        print(f"Website    : {self.website}")
+        print(f"Contact    : {self.contact}")
+        print("=" * 30)
+
+# Example Usage
+company = CompanyProfile(
+    name="Sakthi Adithya Kumarasamy",
+    industry="Devops",
+    location="Pollachi,TN",
+    website="https://www.adithya.com",
+    contact="9876543210"
+)
+
+company.display_profile()
+
